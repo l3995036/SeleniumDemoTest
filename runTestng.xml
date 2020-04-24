@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" thread-count="2" parallel="classes">
+  <test name="learning">
+    <classes>
+      <class name="com.example.learning.FindElementsTest">
+        <methods>
+          <include name="byIdTest"/>
+        </methods>
+      </class> <!-- com.example.learning.SendTest -->
+      <class name="com.example.learning.SendTest">
+      </class> <!-- com.example.learning.SendTest -->
+    </classes>
+  </test> <!-- learning -->
+</suite> <!-- Default Suite -->

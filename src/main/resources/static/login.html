@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<input type="button" id="alert" value="alert" onclick="submit()"/>
+<input type="button" id="comfirm" value="comfirm" onclick="submit1()"/>
+<input type="button" id="prompt" value="prompt" onclick="submit2()"/>
+<label class="col-sm-3 control-label">下拉列表：</label>
+<div class="col-sm-9">
+    <select class="form-control" name="">
+        <option>选项 1</option>
+        <option>选项 2</option>
+        <option>选项 3</option>
+        <option>选项 4</option>
+    </select>
+</div>
+</body>
+<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js">
+</script>
+<script>
+    /*$(function () {
+        $("#submit").click(function () {
+        })
+
+    });*/
+    function submit() {
+        alert("登录成功");
+    }
+    function submit1() {
+        var con;
+        con=confirm("你喜欢玫瑰花么?"); //在页面上弹出对话框
+        if(con==true)alert("非常喜欢!");
+        else alert("不喜欢!");
+    }
+    function submit2(){
+        var name,age;
+        name=prompt("请问你叫什么名字?"); /*在页面上弹出提示对话框，
+将用户输入的结果赋给变量name*/
+        alert(name); //输出用户输入的信息
+        age=prompt("你今年多大了?","请在这里输入年龄"); /*在页面上再一次弹出提示对话框，
+讲用户输入的信息赋给变量age*/
+        alert(age)//输出用户输入的信息
+    }
+</script>
+</html>
